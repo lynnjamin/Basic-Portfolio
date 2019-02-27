@@ -1,21 +1,26 @@
-html {
+html, body {
     height: 100%;
+
 }
 
 body {
     margin: 0;
     padding: 0;
-    position: relative;
-    background-image: url('../css/lyonnette.png');
+    display: flex;
+    flex-direction: column;
+    background-image: url('../css/lyonnette.png'); no-repeat center center fixed;
+}
+
+.wrapper {
+    flex: 1 0 auto;
 }
 
 .nav {
     z-index: 1;
     overflow: hidden;
     background: #ffffff;
-    position: fixed;
     top: 0;
-    margin-bottom: 150px;
+    margin-bottom: 20px;
     padding: 40px 0px;
     width: 100%;
     border-bottom: solid #dddddd 2px;
@@ -106,13 +111,14 @@ img {
 
 .main {
     margin: auto;
-    margin-top: 120px;
+    margin-top: 10px;
     padding-bottom: 20px;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
     border: #dddddd 1px solid;
     background-color: #ffffff;
     width: 960px;
-    min-height: 10px;
+    flex: 1 0 auto;
+
 }
 
 form {
@@ -181,9 +187,6 @@ input[type="submit"] {
     border-top: solid 8px #4aaaa5;
     text-align: center;
     width: 100%;
-    height: 50px; 
-    margin-top: 20px;
-    position: fixed;
-    bottom: 0;
-    clear: both;
+    height: 50px;
+    flex-shrink: 0;
   }
